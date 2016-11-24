@@ -1,0 +1,382 @@
+
+/*********************************************************************************************************************************************
+ ** General
+ */
+QWidget {
+	font-family: "Roboto";
+	font-size: 14px;
+	background-color: transparent;
+}
+QWidget[StyleClass="selected"]{
+        background-color: #FFFFFF;
+        color: #1B3E93;
+}
+QWidget[StyleClass="selected"] QLabel{
+        color: #1B3E93;
+}
+QWidget[ColorSet="red"] {
+	color: #FF0000;
+}
+QWidget[ColorSet="blue"] {
+	color: #0AA8FB;
+}
+QWidget[ColorSet="green"] {
+	color: #38B14A;
+}
+QWidget[ColorSet="yellow"] {
+	color: #FF7F45;
+}
+QWidget[ColorSet="gray"] {
+	color: #AAAAAA;
+}
+QWidget[ColorSet="white"] {
+        color: white;
+}
+QWidget[BGColorSet="red"]{
+	background-color: #FF0000;
+}
+QWidget[BGColorSet="blue"]{
+	background-color: #0AA8FB;
+}
+QWidget[BGColorSet="green"]{
+	background-color: #38B14A;
+}
+QWidget[BGColorSet="yellow"]{
+	background-color: #FF7F45;
+}
+QWidget[BGColorSet="gray"] {
+	background-color: #AAAAAA;
+}
+QWidget[BGColorSet="transparent"] {
+        background-color: transparent;
+}
+
+/**********************************************************************************************************************************************/
+QPushButton{
+    padding-left:5px;
+    padding-right:5px;
+    border-radius: 0px;
+	border: 1px solid #FFFFFF;
+	color: white;
+	background-color: transparent;
+}
+QPushButton:hover{
+	color: #1B3E93;
+	border-color: white;
+	background-color: white;
+}
+QPushButton:hover[StyleClass="red"]{
+	color: #FF0000;
+	border-color: #FF0000;
+	background-color: white;
+}
+QPushButton:hover[StyleClass="green"]{
+	color: #38B14A;
+	border-color: #38B14A;
+	background-color: white;
+}
+QPushButton:hover[StyleClass="blue"]{
+	color: #0AA8FB;
+	border-color: #0AA8FB;
+	background-color: white;
+}
+QPushButton:hover[StyleClass="gray"]{
+	color: #FF7F45;
+	border-color: #FF7F45;
+	background-color: white;
+}
+
+/**********************************************************************************************************************************************/
+QProgressBar {
+    color : white;
+    border-radius: 5px;
+    text-align: center;
+    border-style: solid;
+    font-family: "Roboto";
+    border-color:transparent;
+}
+QProgressBar::chunk {
+    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0,stop:0 rgba(239, 130, 0, 255),stop:1 rgba(244, 170, 0, 255));
+}
+QProgressBar::chunk[ColorSet="green"] {
+	background-color: #38B14A;
+}
+
+QProgressBar:!enabled {
+    border-width: 1px;
+    color: rgb(210,210,210);
+    border-color: rgb(150,150,150);
+}
+/**********************************************************************************************************************************************/
+QLabel {
+    border: none;
+    color: black;
+    background: none;
+    font-family: "Roboto";
+	font-size: 16px;
+}
+QLabel#lblHeader,QLabel#lblTimer,QLabel#txaErrorDescription,QLabel#lblStatus{
+    color:white;
+    font-family: 'Roboto Light', 'Roboto Regular', 'Roboto';
+}
+QLabel#lblHeader{
+    font-weight: normal;
+    font-size: 24px;
+}
+QLabel#lblMainStatus,QLabel#lblSystemFunctions, QLabel#lblFunction,QLabel#lblDriverInformation{
+    font-family: 'Roboto Light', 'Roboto Regular', 'Roboto';
+    font-size: 20px;
+    color:#FFFFFF;
+}
+QLabel#lblSystemFunctions, QLabel#lblFunction,QLabel#lblDriverInformation{
+    font-weight: normal;
+}
+QLabel#txaErrorDescription{
+    font-family: "robotoregular";
+    font-size: 14px;
+    color:#FFFFFF;
+}
+
+/**********************************************************************************************************************************************/
+QGroupBox {
+	border: 1px solid #FFFFFF;
+	border-radius: 0px;
+}
+QGroupBox[BGColorSet="green"], QGroupBox[BGColorSet="red"], QGroupBox[BGColorSet="yellow"], QGroupBox[BGColorSet="blue"]{
+	border-color: transparent;
+}
+
+/**********************************************************************************************************************************************/
+/**************************Top Menu starts******************************/
+QGroupBox#gbx_titleInfo{
+	background-color: rgba(48, 48, 48, 65%);
+	border:0px;
+}
+QGroupBox#gbx_titleInfo QGroupBox{
+	border:0px;
+	background-color:transparent;
+}
+QGroupBox#gbx_titleInfo QLabel{
+	font-family:"Roboto";
+	font-size:14px;
+	color:white;
+}
+
+QGroupBox:hover[StyleClass="MachineStyle"]{
+    border:0px;
+    background-color:#0AA8FB;
+}
+
+/**************************Top Menu Ends******************************/
+QLabel[StyleClass="default"]{
+    color: white;
+	font-size: 16px;
+
+}
+QLabel[StyleClass="defaultSmall"]{
+	color: white;
+	font-size: 12px;
+
+}
+QLabel[StyleClass="selected"]{
+	color: #1B3E93;
+	font-size: 16px;
+
+}
+QLabel[StyleClass="selectedSmall"]{
+	color: #1B3E93;
+	font-size: 12px;
+
+}
+QWidget#uctSystemFunction1:hover, QWidget#uctSystemFunction2:hover, QWidget#uctSystemFunction3:hover, QWidget#uctSystemFunction4:hover, QWidget#uctSystemFunction5:hover, QWidget#uctSystemFunction6:hover, QWidget#uctSystemFunction7:hover{
+    background-color: #1B3E93;
+}
+
+QWidget#uctSystemFunction1[StyleClass="selected"], QWidget#uctSystemFunction2[StyleClass="selected"], QWidget#uctSystemFunction3[StyleClass="selected"], QWidget#uctSystemFunction4[StyleClass="selected"], QWidget#uctSystemFunction5[StyleClass="selected"], QWidget#uctSystemFunction6[StyleClass="selected"], QWidget#uctSystemFunction7[StyleClass="selected"]{
+    background-color: white;
+}
+QWidget#uctSystemFunction1 QGroupBox, QWidget#uctSystemFunction2 QGroupBox, QWidget#uctSystemFunction3 QGroupBox, QWidget#uctSystemFunction4 QGroupBox, QWidget#uctSystemFunction5 QGroupBox, QWidget#uctSystemFunction6 QGroupBox, QWidget#uctSystemFunction7 QGroupBox{
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-color: #FFFFFF;
+}
+QWidget[StyleClass="NavigationButton"] QGroupBox{
+    background-color: rgba(48,48,48,40%);
+    border:0px;
+    border-color: rgba(48,48,48,40%);
+}
+QWidget[StyleClass="NavigationButtonErrorAlarm"] QGroupBox{
+    background-color: rgb(255,0,0);
+    border:0px;
+    border-color: rgb(255,0,0);
+}
+QWidget[StyleClass="NavigationButtonErrorAlarm"] QGroupBox:!enabled{
+    background-color: grey;
+}
+QWidget QLabel[StyleClass="hoverOn"] {
+    color: #1B3E93;
+}
+QWidget QGroupBox[StyleClass="hoverOn"] {
+    background-color: white;
+}
+QWidget QLabel[StyleClass="hoverOff"] {
+    color: white;
+}
+QWidget QGroupBox[StyleClass="hoverOff"] {
+    background-color: rgba(48,48,48,40%);
+    border:0px;
+}
+QWidget QLabel[StyleClass="hoverOnAlarmButton"] {
+    color: #FF0000;
+}
+QWidget QGroupBox[StyleClass="hoverOnAlarmButton"] {
+    background-color: white;
+}
+QWidget QLabel[StyleClass="hoverOffAlarmButton"] {
+    color: white;
+}
+QWidget QGroupBox[StyleClass="hoverOffAlarmButton"] {
+    background-color: rgb(255,0,0);
+    border:0px;
+}
+QWidget#uctTopBarStatus QGroupBox[StyleClass="green"]{
+    background-color: #38B14A;
+}
+QWidget#uctTopBarStatus QGroupBox[StyleClass="orange"]{
+    background-color: #FF7F45;
+}
+QWidget#uctTopBarStatus QGroupBox[StyleClass="blue"]{
+    background-color: #0AA8FB;
+}
+QWidget#uctTopBarStatus QGroupBox[StyleClass="red"]{
+    background-color: #FF0000;
+}
+QWidget#uctTopBarStatus QGroupBox[StyleClass="transparent"]{
+    background-color: transparent;
+}
+/**********************************************************************************************************************************************/
+QTableView#tawDriver{
+    font: 14pt "Roboto";
+	font-weight: bold;
+    padding:  0px;
+    background-color: transparent;
+    border: none;
+	gridline-color: #4b64ac;
+}
+QTableView#tawDriver QGroupBox{
+	border: 0px;
+}
+QTableView#tawDriver:item{
+    background-color: transparent;
+	border: 0px;
+}
+QTableView#tawDriver:item:hover {
+	background-color: #1B3E93;
+}
+
+/**********************************************************************************************************************************************/
+QTextEdit#txaErrorDescription {
+    border:0px;
+    font-family: "Roboto";
+}
+
+QTextEdit#txaCPDDetail{
+	background-color: #FFFFFF;
+
+}
+/**********************************************************************************************************************************************/
+QWidget[SUIFont="bold"] {
+    font: bold
+}
+QWidget[SUIAlignment="left"] {
+    text-align:left;
+}
+QWidget[SUIAlignment="right"] {
+    text-align:right;
+}
+QWidget[SUIAlignment="center"] {
+    text-align:center;
+}
+/**********************************************************************************************************************************************/
+QComboBox {
+    border-radius: 5px;
+    padding: 1px 0px 1px 3px; /*Trick to change the color of the showed value*/
+    border: 1px solid #2f3d5d;
+    background-color: #FFFFFF; /*cym "feature" blue */
+    font: 11pt normal "Roboto";
+}
+QComboBox::drop-down {
+    border-left: 2px solid #2f3d5d;
+    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(239, 130, 0, 255), stop:1 rgba(244, 170, 0, 255));
+}
+QComboBox::down-arrow {
+    border-image: url(:/image/arrowDownSolid.png) 4 1 4 1 stretch stretch;
+}
+QComboBox::down-arrow:on { /* QComboBox gets the "on" state when the popup is open */
+    border-image: url(:/image/arrowUpSolid.png) 4 1 4 1 stretch stretch;
+}
+QComboBox::down-arrow:!enabled {
+    border-image: url(:/image/arrowDownSolidDisabled.png) 4 1 4 1 stretch stretch;
+}
+QComboBox:!enabled {
+    border: 1px solid rgb(150,150,150);
+}
+QComboBox::drop-down:!enabled {
+    border-left: 1px solid rgb(150,150,150);
+    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0,
+                                      stop:0 rgba(190, 150, 90, 255),
+                                      stop:1 rgba(170, 170, 170, 255));
+}
+QComboBox:focus {
+    padding: 0px;
+    outline: none;
+    border-width: 3px;
+    border-color: #567dbc;
+}
+
+/**********************************************************************************************************************************************/
+/*************************Error Bar Starts****************************/
+QGroupBox#gbx_ErrorInfo{
+	background-color:#FF0000;
+	border:0px;
+}
+QGroupBox#gbx_ErrorInfo QGroupBox{
+	border:0px;
+	border-color:transparent;
+	background-color:transparent;
+}
+QGroupBox#gbx_ErrorInfo QLabel{
+	font-family:"Roboto";
+	font-size:14px;
+	color:white;
+}
+QPushButton#btn_ErrorInfo_Close {
+	background-color: transparent;
+	color: white;
+	border-color: white;
+	font-family: "Roboto";
+}
+QPushButton#btn_ErrorInfo_Close:hover {
+	background-color: white;
+	color: #FF0000;
+	border-color: #FF0000;
+	font-family: "Roboto";
+}
+/**************************Error Bar ends*****************************/
+/**********************************************************************************************************************************************/
+QWidget[BGColorSet="error"] {
+    border-color: #2f3d5d;
+    background-color: rgb(255, 0, 0, 50);
+}
+QWidget[BGColorSet="warning"] {
+    border-color: #2f3d5d;
+    background-color: rgb(0, 0, 255, 50);
+}
+QWidget[BGColorSet="ok"] {
+    border-color: #2f3d5d;
+    background-color: rgb(255, 255, 255, 50);
+}
+QWidget:!enabled{
+	color: #969696;
+}
